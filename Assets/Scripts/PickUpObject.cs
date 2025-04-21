@@ -28,12 +28,7 @@ public class PickUpObject : MonoBehaviour
                 hasItem = true;
             }
         }
-        if (Input.GetButtonDown("q") && hasItem == true)
-        {
-            ObjectIwantToPickUp.GetComponent<Rigidbody>().isKinematic = false;
-            ObjectIwantToPickUp.transform.parent = null;
-            hasItem = false;
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
