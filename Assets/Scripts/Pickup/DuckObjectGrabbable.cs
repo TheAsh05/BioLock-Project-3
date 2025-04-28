@@ -21,30 +21,39 @@ public class DuckObjectGrabbable : MonoBehaviour
     public void Grab(Transform duckObjectGrabPointTransform)
     {
         this.duckObjectGrabPointTransform = duckObjectGrabPointTransform;
-        objectRigidbody.useGravity = false;
-        //make it a child of duckobject grab point transform
 
+        // Turn off physics
+        objectRigidbody.isKinematic = true;
+        objectRigidbody.interpolation = RigidbodyInterpolation.None; // Just extra safe
+        objectCollider.enabled = false;
+
+        // Parent to the grab point
+        transform.SetParent(duckObjectGrabPointTransform);
+
+        // Snap exactly onto the grab point
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity; // Reset rotation relative to grab point
+
+        // Show dialogue
         dialogueBox.SetActive(true);
-        dialogueBox.GetComponentInChildren<Text>().text = dialogueText; // Display the dialogue text
+        dialogueBox.GetComponentInChildren<Text>().text = dialogueText;
     }
 
     public void Drop()
     {
-        this.duckObjectGrabPointTransform = null;
-        objectRigidbody.useGravity = true;
+        // this.duckObjectGrabPointTransform = null;
+
+        // // Unparent
+        // transform.SetParent(null);
+
+        // // Restore physics
+        // objectRigidbody.isKinematic = false;
+        // objectCollider.enabled = true;
     }
 
     private void FixedUpdate()
     {
-        if (duckObjectGrabPointTransform != null)
-        {
-            float lerpSpeed = 10f;
-            UnityEngine.Vector3 newPosition = UnityEngine.Vector3.Lerp(transform.position, duckObjectGrabPointTransform.position, Time.deltaTime * lerpSpeed);
-            objectRigidbody.MovePosition(newPosition);
-
-            // Make the duck face the player
-
-        }
+        
     }
 
     // Start is called before the first frame update
