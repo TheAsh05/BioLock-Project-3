@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DuckObjectGrabbable : MonoBehaviour
 {
@@ -36,7 +37,8 @@ public class DuckObjectGrabbable : MonoBehaviour
 
         // Show dialogue
         dialogueBox.SetActive(true);
-        dialogueBox.GetComponentInChildren<Text>().text = dialogueText;
+        dialogueBox.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
+        //OLDdialogueBox.GetComponentInChildren<Text>().text = dialogueText;
     }
 
     public void Drop()

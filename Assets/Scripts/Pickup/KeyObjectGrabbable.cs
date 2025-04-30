@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PotionObjectGrabbable : MonoBehaviour
+public class KeyObjectGrabbable : MonoBehaviour
 {
     private Rigidbody objectRigidbody;
     private Collider objectCollider;
-    private Transform potionObjectGrabPointTransform;
+    private Transform keyObjectGrabPointTransform;
     
 
     private void Awake()
@@ -17,9 +17,9 @@ public class PotionObjectGrabbable : MonoBehaviour
     }
 
 
-    public void Grab(Transform potionObjectGrabPointTransform)
+    public void Grab(Transform keyObjectGrabPointTransform)
     {
-        this.potionObjectGrabPointTransform = potionObjectGrabPointTransform;
+        this.keyObjectGrabPointTransform = keyObjectGrabPointTransform;
 
         // Turn off physics
         objectRigidbody.isKinematic = true;
@@ -27,16 +27,21 @@ public class PotionObjectGrabbable : MonoBehaviour
         objectCollider.enabled = false;
 
         // Parent to the grab point
-        transform.SetParent(potionObjectGrabPointTransform);
+        transform.SetParent(keyObjectGrabPointTransform);
 
         // Snap exactly onto the grab point
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity; // Reset rotation relative to grab point
+
+        // Ignore collisions between the key and the player
+        Collider playerCollider = GameObject.FindWithTag("Player").GetComponent<Collider>();
+        Physics.IgnoreCollision(objectCollider, playerCollider, true);
     }
 
     public void Drop()
     {
-        // this.potionObjectGrabPointTransform = null;
+        // I may not make it so you can drop the key
+        // this.keyObjectGrabPointTransform = null;
 
         // // Unparent
         // transform.SetParent(null);
@@ -44,15 +49,19 @@ public class PotionObjectGrabbable : MonoBehaviour
         // // Restore physics
         // objectRigidbody.isKinematic = false;
         // objectCollider.enabled = true;
+
+        // // Re-enable collision
+        // Collider playerCollider = GameObject.FindWithTag("Player").GetComponent<Collider>();
+        // Physics.IgnoreCollision(objectCollider, playerCollider, false);
     }
 
     private void LateUpdate()
     {
-        if (potionObjectGrabPointTransform != null)
+        if (keyObjectGrabPointTransform != null)
         {
-            // Force position to follow exactly in casse parenting lags
-            transform.position = potionObjectGrabPointTransform.position;
-            transform.rotation = potionObjectGrabPointTransform.rotation;
+            // Force position to follow exactly in case parenting lags
+            transform.position = keyObjectGrabPointTransform.position;
+            transform.rotation = keyObjectGrabPointTransform.rotation;
         }
     }
 

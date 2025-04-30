@@ -16,7 +16,7 @@ TagManager:
   - PickupItems
   - DuckPickupItem
   - PotionPickupItem
-  - 
+  - KeyPickupItem
   - 
   - 
   - 

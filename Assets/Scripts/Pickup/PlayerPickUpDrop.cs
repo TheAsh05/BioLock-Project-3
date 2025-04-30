@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -12,15 +13,35 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private LayerMask pickUpLayerMask;
     [SerializeField] private LayerMask duckPickUpLayerMask;
     [SerializeField] private LayerMask potionPickUpLayerMask;
-    
+
+
+    // For Lock Interactable
+    public static PlayerPickUpDrop Instance; // Singleton pattern
+    [SerializeField] private Transform keyGrabPointTransform;
+    [SerializeField] private LayerMask keyPickUpLayerMask;    
+
 
     private ObjectGrabbable objectGrabbable;
     private DuckObjectGrabbable duckObjectGrabbable;
     private PotionObjectGrabbable potionObjectGrabbable;
+    private KeyObjectGrabbable keyObjectGrabbable;
 
+
+    // Keeping the Duck and Potion
+    public GameObject duck; // The duck object in the player scene
+    public GameObject potion; // The potion object
+
+
+    private void Awake()
+    {
+        // for Key grabbable
+        Instance = this; // Set reference
+    }
+   
 
     private void Update()
     {
+        // Object Pickup (old key pickup)
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (objectGrabbable == null)
@@ -43,7 +64,10 @@ public class PlayerPickUpDrop : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+
+
+        // Duck Pickup
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (duckObjectGrabbable == null)
             {
@@ -57,7 +81,8 @@ public class PlayerPickUpDrop : MonoBehaviour
                         Debug.Log(duckObjectGrabbable);
                     }
                 }
-            } else 
+            } 
+            else 
             {
                 //Currently carrying something
                 duckObjectGrabbable.Drop();
@@ -65,8 +90,10 @@ public class PlayerPickUpDrop : MonoBehaviour
             }
         }
 
-        // potion
-        if (Input.GetKeyDown(KeyCode.Q))
+
+
+        // Potion Pickup
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (potionObjectGrabbable == null)
             {
@@ -87,5 +114,35 @@ public class PlayerPickUpDrop : MonoBehaviour
                 potionObjectGrabbable = null;
             }
         }
+
+
+
+        // Key Pickup
+        if (Input.GetKeyDown(KeyCode.E)) // Or Q or whatever
+        {
+            if (keyObjectGrabbable == null)
+            {
+                float pickUpDistance = 2f;
+                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, pickUpDistance, keyPickUpLayerMask))
+                {
+                    if (hit.transform.TryGetComponent(out KeyObjectGrabbable key))
+                    {
+                        keyObjectGrabbable = key;
+                        keyObjectGrabbable.Grab(keyGrabPointTransform);
+                    }
+                }
+            }
+            else
+            {
+                keyObjectGrabbable.Drop();
+                keyObjectGrabbable = null;
+            }
+        }
+    }
+
+    // For Key Pickup
+    public bool IsHoldingKey()
+    {
+        return keyObjectGrabbable != null;
     }
 }
