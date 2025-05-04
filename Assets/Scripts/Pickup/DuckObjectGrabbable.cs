@@ -23,23 +23,44 @@ public class DuckObjectGrabbable : MonoBehaviour
     {
         this.duckObjectGrabPointTransform = duckObjectGrabPointTransform;
 
-        // Turn off physics
-        objectRigidbody.isKinematic = true;
-        objectRigidbody.interpolation = RigidbodyInterpolation.None; // Just extra safe
-        objectCollider.enabled = false;
+        if (objectRigidbody != null)
+            objectRigidbody.isKinematic = true;
 
-        // Parent to the grab point
-        transform.SetParent(duckObjectGrabPointTransform);
+        if (objectCollider != null)
+            objectCollider.enabled = false;
 
-        // Snap exactly onto the grab point
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity; // Reset rotation relative to grab point
+            transform.SetParent(duckObjectGrabPointTransform);
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
 
-        // Show dialogue
-        dialogueBox.SetActive(true);
-        dialogueBox.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
-        //OLDdialogueBox.GetComponentInChildren<Text>().text = dialogueText;
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(true);
+            dialogueBox.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
+        }
     }
+
+    // public void Grab(Transform duckObjectGrabPointTransform)
+    // {
+    //     this.duckObjectGrabPointTransform = duckObjectGrabPointTransform;
+
+    //     // Turn off physics
+    //     objectRigidbody.isKinematic = true;
+    //     objectRigidbody.interpolation = RigidbodyInterpolation.None; // Just extra safe
+    //     objectCollider.enabled = false;
+
+    //     // Parent to the grab point
+    //     transform.SetParent(duckObjectGrabPointTransform);
+
+    //     // Snap exactly onto the grab point
+    //     transform.localPosition = Vector3.zero;
+    //     transform.localRotation = Quaternion.identity; // Reset rotation relative to grab point
+
+    //     // Show dialogue
+    //     dialogueBox.SetActive(true);
+    //     dialogueBox.GetComponentInChildren<TextMeshProUGUI>().text = dialogueText;
+    //     //OLDdialogueBox.GetComponentInChildren<Text>().text = dialogueText;
+    // }
 
     public void Drop()
     {

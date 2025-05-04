@@ -17,13 +17,30 @@ public class LockInteractable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (PlayerPickUpDrop.Instance.IsHoldingKey())
+        Debug.Log("Clicked lock");
+
+        if (PlayerPickUpDrop.Instance != null && PlayerPickUpDrop.Instance.IsHoldingKey())
         {
-            // Load next scene
+            Debug.Log("Player is holding key - loading scene...");
+
+            // Optionally: Remove or destroy the key before changing scene
+            PlayerPickUpDrop.Instance.RemoveKey(); // Only if you implement it
             SceneManager.LoadScene(nextSceneName);
         }
+
+
+        // if (PlayerPickUpDrop.Instance.IsHoldingKey())
+        // {
+        //     // Remove Key
+        //     PlayerPickUpDrop.Instance.RemoveKey();
+        //     // Load next scene
+        //     SceneManager.LoadScene(nextSceneName);
+        // }
         else
         {
+            Debug.Log("Player is NOT holding key");
+            
+            // Show message to the player if they don't have the key
             StartCoroutine(ShowMessage("You need the key to unlock this!", 2f));
         }
     }

@@ -4786,7 +4786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messageText: {fileID: 2144224595}
-  nextSceneName: 
+  nextSceneName: Level 2
 --- !u!65 &635020399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8658,7 +8658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a39e7f7ff594031af5fa07b07c0b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHands: {fileID: 455084178}
 --- !u!54 &1216910150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14299,6 +14298,8 @@ MonoBehaviour:
   keyPickUpLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  duck: {fileID: 1944106083}
+  potion: {fileID: 549280959}
 --- !u!1001 &2101038319
 PrefabInstance:
   m_ObjectHideFlags: 0

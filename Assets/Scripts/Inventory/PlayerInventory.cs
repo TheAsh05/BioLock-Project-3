@@ -8,6 +8,10 @@ public class PlayerInventory : MonoBehaviour
     public static GameObject currentPotion; // Store the potion
     public static bool hasKey = false; // Track if the key is held
 
+    public static bool wasHoldingDuck = false;
+    public static bool wasHoldingPotion = false;
+
+
     // When the scene is loaded, call this function to persist items
     public static void SaveItems(GameObject duck, GameObject potion)
     {
@@ -20,7 +24,14 @@ public class PlayerInventory : MonoBehaviour
         currentDuck = null;
         currentPotion = null;
         hasKey = false;
+        wasHoldingDuck = false;
+        wasHoldingPotion = false;
     }
+
+    // void OnLevelWasLoaded(int level)
+    // {
+    //     PlayerInventory.ResetInventory();
+    // }
 
 
     // // Start is called before the first frame update
