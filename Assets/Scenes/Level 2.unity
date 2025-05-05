@@ -319,7 +319,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b81691fd5ef4b309d653e4bda16bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!20 &30375017
 Camera:
   m_ObjectHideFlags: 0
@@ -7512,6 +7511,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -23.948788
       objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664766, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: orthographic size
       value: 10
@@ -7643,6 +7646,11 @@ MonoBehaviour:
   potion: {fileID: 0}
   currentDuck: {fileID: 0}
   duckPrefab: {fileID: 0}
+--- !u!1 &1025940475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+  m_PrefabInstance: {fileID: 1025940470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1026522147
 GameObject:
   m_ObjectHideFlags: 0
@@ -12845,6 +12853,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3396001746467026945, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
   m_PrefabInstance: {fileID: 1903682660}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1912937514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912937517}
+  - component: {fileID: 1912937516}
+  - component: {fileID: 1912937515}
+  m_Layer: 0
+  m_Name: PlayerSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1912937515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912937514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43e74b6357a24ec78f7f7e171775bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 1025940475}
+  spawnPoint: {fileID: 1912937517}
+--- !u!114 &1912937516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912937514}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326731d4f8d404774acb6e0fb9251cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+--- !u!4 &1912937517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912937514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22, y: -6, z: -18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1918261165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14875,11 +14944,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1025940470}
+  - {fileID: 1912937517}
   - {fileID: 721483973}
   - {fileID: 1026522150}
+  - {fileID: 637364033}
+  - {fileID: 770317135}
   - {fileID: 1021796127}
   - {fileID: 671369868}
   - {fileID: 828856480}
-  - {fileID: 770317135}
   - {fileID: 1161094467}
-  - {fileID: 637364033}
