@@ -13,4 +13,20 @@ public class MiniMap : MonoBehaviour
         newPosition.y = transform.position.y;
         transform.position = newPosition;        
     }
+
+    void Start()
+    {
+        if (player == null)
+        {
+            GameObject foundPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (foundPlayer != null)
+            {
+                player = foundPlayer.transform;
+            }
+            else
+            {
+                Debug.LogError("Player GameObject not found in scene. Make sure it's tagged 'Player'.");
+            }
+        }
+    }
 }

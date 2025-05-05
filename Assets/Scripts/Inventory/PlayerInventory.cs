@@ -4,45 +4,95 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public static GameObject currentDuck; // Store the duck
-    public static GameObject currentPotion; // Store the potion
-    public static bool hasKey = false; // Track if the key is held
+    public static PlayerInventory Instance;
 
+    // Persistent flags and object references
     public static bool wasHoldingDuck = false;
     public static bool wasHoldingPotion = false;
+    public static bool hasKey = false;
 
+    public static GameObject currentDuck = null;
+    public static GameObject currentPotion = null;
 
-    // When the scene is loaded, call this function to persist items
-    public static void SaveItems(GameObject duck, GameObject potion)
+    private void Awake()
     {
-        currentDuck = duck;
-        currentPotion = potion;
+        // Singleton pattern to avoid duplicates
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public static void ResetInventory()
     {
-        currentDuck = null;
-        currentPotion = null;
-        hasKey = false;
         wasHoldingDuck = false;
         wasHoldingPotion = false;
+        hasKey = false;
+
+        if (currentDuck != null)
+        {
+            Destroy(currentDuck);
+            currentDuck = null;
+        }
+
+        if (currentPotion != null)
+        {
+            Destroy(currentPotion);
+            currentPotion = null;
+        }
     }
 
-    // void OnLevelWasLoaded(int level)
+
+
+
+    // public static GameObject currentDuck; // Store the duck
+    // public static GameObject currentPotion; // Store the potion
+    // public static bool hasKey = false; // Track if the key is held
+
+    // public static bool wasHoldingDuck = false;
+    // public static bool wasHoldingPotion = false;
+
+
+    // // When the scene is loaded, call this function to persist items
+    // public static void SaveItems(GameObject duck, GameObject potion)
     // {
-    //     PlayerInventory.ResetInventory();
+    //     currentDuck = duck;
+    //     currentPotion = potion;
     // }
 
-
-    // // Start is called before the first frame update
-    // void Start()
+    // public static void ResetInventory()
     // {
+    //     currentDuck = null;
+    //     currentPotion = null;
+    //     hasKey = false;
+    //     wasHoldingDuck = false;
+    //     wasHoldingPotion = false;
+    // }
+
+    // void Awake()
+    // {
+    //     DontDestroyOnLoad(this.gameObject);
+    // }
+
+    // // void OnLevelWasLoaded(int level)
+    // // {
+    // //     PlayerInventory.ResetInventory();
+    // // }
+
+
+    // // // Start is called before the first frame update
+    // // void Start()
+    // // {
         
-    // }
+    // // }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
+    // // // Update is called once per frame
+    // // void Update()
+    // // {
         
-    // }
+    // // }
 }
