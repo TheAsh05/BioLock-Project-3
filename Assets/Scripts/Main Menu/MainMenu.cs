@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,9 +27,20 @@ public class MainMenu : MonoBehaviour
     }
 
     //Suggested when I type Quit
-//     public void OnApplicationQuit()
-//     {
-//         Application.Quit();
-//         Debug.Log("Player has quit the game");
-//     }
- }
+    //     public void OnApplicationQuit()
+    //     {
+    //         Application.Quit();
+    //         Debug.Log("Player has quit the game");
+    //     }
+
+    void Start()
+    {
+        FindObjectOfType<FirstPersonController>();
+
+        FirstPersonController controller = FindObjectOfType<FirstPersonController>();
+        if (controller != null)
+            {
+                Destroy(controller.transform.parent.gameObject);
+            }
+    }
+}

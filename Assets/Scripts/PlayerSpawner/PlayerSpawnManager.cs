@@ -39,7 +39,7 @@ public class PlayerSpawnManager : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject); // Persist this object across scene loads
+        //DontDestroyOnLoad(gameObject); // Persist this object across scene loads
         instance = this;
     }
 
@@ -57,21 +57,23 @@ public class PlayerSpawnManager : MonoBehaviour
     {
         if (playerPrefab != null && spawnPoint != null)
         {
-            // Check if the player already exists in the scene
+            // // Check if the player already exists in the scene
             playerInstance = GameObject.FindWithTag("Player");
 
-            // If a player instance exists, destroy it before spawning a new one
-            if (playerInstance != null)
-            {
-                Destroy(playerInstance);
-            }
+            // // If a player instance exists, destroy it before spawning a new one
+            // if (playerInstance != null)
+            // {
+            //     //Destroy(playerInstance);
+            // }
 
             // Instantiate the player at the spawn point
-            playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-            playerInstance.tag = "Player"; // Ensure the new player is tagged correctly
+            //playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+            //playerInstance.tag = "Player"; // Ensure the new player is tagged correctly
+
+            playerInstance.transform.position = spawnPoint.position;
 
             // Ensure the FirstPersonController is enabled
-            FirstPersonController controller = playerInstance.GetComponent<FirstPersonController>();
+            FirstPersonController controller = playerInstance.GetComponentInChildren<FirstPersonController>();
             if (controller != null)
             {
                 controller.enabled = true;  // Enable the controller for movement
@@ -81,60 +83,8 @@ public class PlayerSpawnManager : MonoBehaviour
                 Debug.LogWarning("FirstPersonController not found on player prefab!");
             }
         }
-
-
-        // if (playerPrefab != null && spawnPoint != null)
-        // {
-        //     // Check if the player already exists in the scene
-        //     playerInstance = GameObject.FindWithTag("Player");
-
-        //     // If a player instance exists, destroy it before spawning a new one
-        //     if (playerInstance != null)
-        //     {
-        //         Destroy(playerInstance);
-        //     }
-
-        //     // Instantiate the player at the spawn point
-        //     playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        //     playerInstance.tag = "Player"; // Ensure the new player is tagged correctly
-
-        //     // Check if the FirstPersonController exists and enable it
-        //     FirstPersonController controller = playerInstance.GetComponent<FirstPersonController>();
-        //     if (controller != null)
-        //     {
-        //         controller.enabled = true; // Enable the FirstPersonController if it's disabled
-        //     }
-        //     else
-        //     {
-        //         Debug.LogWarning("FirstPersonController not found on player prefab!");
-        //     }
-
-        //     // Optionally, reset Rigidbody settings if you're using it for movement
-        //     Rigidbody rb = playerInstance.GetComponent<Rigidbody>();
-        //     if (rb != null)
-        //     {
-        //         rb.isKinematic = false; // Ensure Rigidbody is not frozen
-        //     }
-        // }
     }
 
-
-        // if (playerPrefab != null && spawnPoint != null)
-        // {
-        //     // Check if the player already exists in the scene
-        //     playerInstance = GameObject.FindWithTag("Player");
-
-        //     // If a player instance exists, destroy it before spawning a new one
-        //     if (playerInstance != null)
-        //     {
-        //         Destroy(playerInstance);
-        //     }
-
-        //     // Instantiate the player at the spawn point
-        //     playerInstance = Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
-        //     playerInstance.tag = "Player"; // Ensure the new player is tagged correctly
-        // }
-    // }
 
     // Method to update spawn point if needed
     public void SetSpawnPoint(Transform newSpawnPoint)

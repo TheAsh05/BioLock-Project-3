@@ -215,6 +215,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6205427424512901989, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205427424512901993, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6205427424512901999, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
       propertyPath: m_Name
       value: Corridor Incline Half
@@ -280,6 +288,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -351,6 +363,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -884,6 +900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (8)
@@ -1004,6 +1024,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1211,6 +1235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1397,6 +1425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner
@@ -1462,6 +1494,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1592,6 +1628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1654,6 +1694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1682,7 +1726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3691659005178554142, guid: aedebdaeae12a6743b39120d2f5156b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6071167
+      value: 2.727
       objectReference: {fileID: 0}
     - target: {fileID: 3691659005178554142, guid: aedebdaeae12a6743b39120d2f5156b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1767,6 +1811,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178751915, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
@@ -2061,6 +2109,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178751915, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
@@ -2494,6 +2546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034562653440211552, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2034562653440211566, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
       propertyPath: m_Name
       value: Corridor Funnel (2)
@@ -2559,6 +2615,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2684,6 +2744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2705,6 +2769,10 @@ PrefabInstance:
     - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_Name
       value: Catwalk Long Rails (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3396001746467026945, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2905,6 +2973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough Lights
       objectReference: {fileID: 0}
+    - target: {fileID: 2553481404179836814, guid: eb2cfde91ad31bf4bad84b2c70e9816e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2921,6 +2993,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3020,6 +3096,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (7)
@@ -3085,6 +3165,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3210,6 +3294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3234,7 +3322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455084179}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3408,6 +3496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (4)
@@ -3546,6 +3638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3608,6 +3704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3669,6 +3769,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3757,6 +3861,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6205427424512483151, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205427424512901989, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205427424512901993, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205427424512901999, guid: 0ef31cdbe65a2f142beeb86422e34425, type: 3}
@@ -4225,6 +4337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Tee Lights (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1019.44
@@ -4326,6 +4442,10 @@ PrefabInstance:
     - target: {fileID: 3773941223442343427, guid: f3666c4739f55c24eb42ed8d7b508700, type: 3}
       propertyPath: m_Name
       value: Catwalk Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773941223442343427, guid: f3666c4739f55c24eb42ed8d7b508700, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4455,6 +4575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4511,6 +4635,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -4637,6 +4765,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (11)
@@ -4757,6 +4889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4818,6 +4954,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4921,6 +5061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough Lights (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2553481404179836814, guid: eb2cfde91ad31bf4bad84b2c70e9816e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5004,6 +5148,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5103,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034562653440211552, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2034562653440211566, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
       propertyPath: m_Name
       value: Corridor Funnel (1)
@@ -5168,6 +5320,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5365,6 +5521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5427,6 +5587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5483,6 +5647,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -5825,6 +5993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5886,6 +6058,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6005,6 +6181,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -6197,6 +6377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6259,6 +6443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6320,6 +6508,10 @@ PrefabInstance:
     - target: {fileID: 3773941223442343427, guid: f3666c4739f55c24eb42ed8d7b508700, type: 3}
       propertyPath: m_Name
       value: Catwalk Corner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773941223442343427, guid: f3666c4739f55c24eb42ed8d7b508700, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6586,6 +6778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6647,6 +6843,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6812,6 +7012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor 4-Way Lights
       objectReference: {fileID: 0}
+    - target: {fileID: 8508690697080748138, guid: dcbf59da08760fb4b9531995a6691a6f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8508690697080841282, guid: dcbf59da08760fb4b9531995a6691a6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1025.43
@@ -6868,6 +7072,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6971,6 +7179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough Lights
       objectReference: {fileID: 0}
+    - target: {fileID: 2553481404179836814, guid: eb2cfde91ad31bf4bad84b2c70e9816e, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6992,6 +7204,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7091,6 +7307,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (03)
@@ -7162,6 +7382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7224,6 +7448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7280,6 +7508,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -7472,7 +7704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 446756, guid: 47eccfdaaa8490246bb90d54bab6ccbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.545
+      value: 16.664873
       objectReference: {fileID: 0}
     - target: {fileID: 446756, guid: 47eccfdaaa8490246bb90d54bab6ccbd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7572,6 +7804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7628,6 +7864,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178751915, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
@@ -7830,6 +8070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7892,6 +8136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7913,6 +8161,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8015,6 +8267,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8140,6 +8396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8214,6 +8474,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034562653440211552, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2034562653440211566, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
       propertyPath: m_Name
       value: Corridor Funnel
@@ -8280,6 +8544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8342,6 +8610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8372,9 +8644,17 @@ PrefabInstance:
       propertyPath: RotationSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2862278905927072855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.210217
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253012990419024489, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4253012990419024490, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_LocalScale.y
@@ -8532,6 +8812,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178751915, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
@@ -8874,6 +9158,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_Name
       value: Corridor Wide
@@ -8939,6 +9227,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9185,6 +9477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9308,6 +9604,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9433,6 +9733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9454,6 +9758,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9691,6 +9999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9752,6 +10064,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9953,6 +10269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10009,6 +10329,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -10303,6 +10627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (04)
@@ -10328,6 +10656,10 @@ PrefabInstance:
     - target: {fileID: 8508690697080748130, guid: dcbf59da08760fb4b9531995a6691a6f, type: 3}
       propertyPath: m_Name
       value: Corridor 4-Way Lights (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508690697080748138, guid: dcbf59da08760fb4b9531995a6691a6f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8508690697080841282, guid: dcbf59da08760fb4b9531995a6691a6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10422,6 +10754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5928300009178857349, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928300009178857355, guid: a57680777d3403843b1e6d4a5b05e5fd, type: 3}
       propertyPath: m_Name
       value: Corridor Wide (2)
@@ -10444,9 +10780,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 838879079}
     m_Modifications:
+    - target: {fileID: 1987996098089819764, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3016890299694482539, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4764849679883809638, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6778069794998177060, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
       propertyPath: m_Name
       value: Catwalk Stairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778069794998177060, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7515332717815086903, guid: 65467f6b70ddf5e4890bd9f317b3a5b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10549,6 +10901,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10666,6 +11022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10741,6 +11101,10 @@ PrefabInstance:
     - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_Name
       value: Catwalk Long Rails
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3396001746467026945, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10836,6 +11200,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10939,6 +11307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11000,6 +11372,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11169,6 +11545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11230,6 +11610,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11558,6 +11942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11827,6 +12215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11882,6 +12274,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12047,6 +12443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12068,6 +12468,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12233,6 +12637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12356,6 +12764,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12481,6 +12893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12543,6 +12959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12564,6 +12984,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12756,6 +13180,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13033,6 +13461,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (5)
@@ -13161,6 +13593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13182,6 +13618,10 @@ PrefabInstance:
     - target: {fileID: 3354483237132092402, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_Name
       value: Corridor Tee Lights (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354483237132092410, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3354483237132263378, guid: ad6aae32dd3eb844fa75e2a156bbe34f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13352,6 +13792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13373,6 +13817,10 @@ PrefabInstance:
     - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_Name
       value: Catwalk Long Rails (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835881230559808018, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3396001746467026945, guid: 207f61281715ab24f9899fdfa960ca48, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13470,6 +13918,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686622698, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
@@ -13769,6 +14221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13959,6 +14415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14145,6 +14605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14250,6 +14714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Tile 03 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14312,6 +14780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corridor Passthrough (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14373,6 +14845,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14494,6 +14970,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911123174686793608, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911123174686793610, guid: 0caa079a07bb6bb4d8189cbe94d69429, type: 3}
       propertyPath: m_Name
       value: Corridor Corner (14)
@@ -14587,6 +15067,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2034562653440211552, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2034562653440211566, guid: 5fe80adc9613d154d800b6453f8cdd3a, type: 3}
       propertyPath: m_Name
       value: Corridor Funnel (1)
@@ -14652,6 +15136,10 @@ PrefabInstance:
     - target: {fileID: 2528018916317293347, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
       propertyPath: m_Name
       value: Corridor Passthrough (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528018916317293401, guid: c4470bf28fca8044dab507d047e88c69, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14776,6 +15264,10 @@ PrefabInstance:
     - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
       propertyPath: m_Name
       value: Floor Tile 03 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167031632194995179, guid: 4f019145598ea474b899ca25a03acd09, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
