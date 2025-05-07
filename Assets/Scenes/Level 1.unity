@@ -3541,6 +3541,7 @@ MonoBehaviour:
   - 'Sir Quacksworth: The bottle will be the key to success. Finding it is key to
     survival.'
   textSpeed: 0.1
+  isDialogueFinished: 0
 --- !u!1001 &309098261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11897,7 +11898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094977340588366727, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -12070,7 +12071,7 @@ GameObject:
   - component: {fileID: 1225493531}
   m_Layer: 8
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

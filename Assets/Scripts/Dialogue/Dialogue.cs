@@ -11,13 +11,14 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     private int index;
+    public bool isDialogueFinished = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
+        //StartDialogue();
     }
 
     // Update is called once per frame
@@ -40,6 +41,8 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue()
     {
         index = 0;
+        textComponent.text = string.Empty;
+        isDialogueFinished = false;
         StartCoroutine(TypeLine());
     }
 
@@ -63,6 +66,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            isDialogueFinished = true;
             gameObject.SetActive(false);
         }
     }
