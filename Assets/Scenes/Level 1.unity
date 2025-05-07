@@ -5455,6 +5455,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1305883699301654, guid: 093a44e6b1a384df88fabf2976ac0055, type: 3}
+      propertyPath: m_TagString
+      value: Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1355227736585190, guid: 093a44e6b1a384df88fabf2976ac0055, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -12536,7 +12540,7 @@ GameObject:
   - component: {fileID: 1289878143}
   m_Layer: 0
   m_Name: PotionGrabPoint
-  m_TagString: Untagged
+  m_TagString: GrabPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
