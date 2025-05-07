@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using StarterAssets;
 
 public class BossProximityDialogue : MonoBehaviour
 {
@@ -19,34 +20,29 @@ public class BossProximityDialogue : MonoBehaviour
     private bool dialogueStarted = false;
     private bool sceneDecided = false;
 
-    private IEnumerator Start()
+    private void Start()
     {
-        // Wait for the player object (using PlayerInput) to be available
-        while (player == null)
+        // Find the player by looking for the FirstPersonController (or any other unique identifier)
+        player = GameObject.FindObjectOfType<FirstPersonController>()?.gameObject;
+
+        if (player == null)
         {
-            var input = FindObjectOfType<UnityEngine.InputSystem.PlayerInput>();
-            if (input != null)
-            {
-                player = input.gameObject;
-            }
-            yield return null;
+            Debug.LogError("Player not found in scene!");
+            return;
         }
 
-        // Try to find the PotionGrabPoint in children (even if inactive)
-        potionGrabPoint = player.GetComponentsInChildren<Transform>(true)
-                                .FirstOrDefault(t => t.name == "PotionGrabPoint");
+        // Look for child named "PotionGrabPoint" under MainCamera
+        //potionGrabPoint = player.transform.Find("MainCamera/PotionGrabPoint");
 
-        if (potionGrabPoint == null)
-        {
-            Debug.LogWarning("PotionGrabPoint not found under player!");
-        }
 
-        // Set up dialogue component
+        // if (potionGrabPoint == null)
+        // {
+        //     Debug.LogWarning("PotionGrabPoint not found under player!");
+        // }
+
         if (dialogueBox != null)
         {
-            dialogueBox.SetActive(false); // Ensure it's hidden at start
             dialogueComponent = dialogueBox.GetComponent<Dialogue>();
-
             if (dialogueComponent == null)
             {
                 Debug.LogError("Dialogue component not found on dialogueBox!");
@@ -56,6 +52,8 @@ public class BossProximityDialogue : MonoBehaviour
         {
             Debug.LogError("DialogueBox is not assigned!");
         }
+
+        dialogueBox.SetActive(false);
     }
 
     private void Update()
@@ -80,10 +78,10 @@ public class BossProximityDialogue : MonoBehaviour
             yield break;
         }
 
-        // Start typewriter dialogue
+        // Start the dialogue
         dialogueComponent.StartDialogue();
 
-        // Wait until the dialogue box is deactivated (done in Dialogue script)
+        // Wait for dialogue to finish
         while (dialogueBox.activeSelf)
         {
             yield return null;
@@ -91,14 +89,17 @@ public class BossProximityDialogue : MonoBehaviour
 
         if (sceneDecided) yield break;
 
-        // Decide win or lose based on potion held
-        if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
+        // Find potion with TAG
+        var foundPotion = GameObject.FindGameObjectWithTag("Potion");
+
+        // Check if potion is in player's hand
+        if (foundPotion != null)
         {
-            SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene(winSceneName);
         }
         else
         {
-            SceneManager.LoadScene("LoseScene");
+            SceneManager.LoadScene(loseSceneName);
         }
 
         sceneDecided = true;
@@ -110,111 +111,19 @@ public class BossProximityDialogue : MonoBehaviour
 
 
 
-    // public float triggerDistance = 5f;
-    // public GameObject dialogueBox; // Assign the Dialogue Box Canvas here
-    // public string winSceneName;
-    // public string loseSceneName;
 
-    // private GameObject player;
-    // private Transform potionGrabPoint;
-    // private Dialogue dialogueComponent;
-    // private bool dialogueStarted = false;
-    // private bool sceneDecided = false;
 
-    // private IEnumerator Start()
-    // {
-    //     // Wait for player object (with FirstPersonController) to appear
-    //     while (player == null)
-    //     {
-    //         var controller = FindObjectOfType<UnityEngine.InputSystem.PlayerInput>()?.gameObject;
-    //         if (controller != null)
-    //         {
-    //             player = controller;
-    //         }
-    //         yield return null;
-    //     }
 
-    //     // Try to find the PotionGrabPoint under the player
-    //     potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
-    //     if (potionGrabPoint == null)
-    //     {
-    //         Debug.LogWarning("PotionGrabPoint not found under player!");
-    //     }
 
-    //     // Set up dialogue box
-    //     if (dialogueBox != null)
-    //     {
-    //         dialogueBox.SetActive(false);
-    //         dialogueComponent = dialogueBox.GetComponent<Dialogue>();
-    //         if (dialogueComponent == null)
-    //         {
-    //             Debug.LogError("Dialogue component not found on DialogueBox!");
-    //         }
-    //     }
-    //     else
-    //     {
-    //         Debug.LogError("DialogueBox is not assigned!");
-    //     }
-    // }
 
-    // private void Update()
-    // {
-    //     if (dialogueStarted || player == null) return;
 
-    //     float distance = Vector3.Distance(player.transform.position, transform.position);
-    //     if (distance <= triggerDistance)
-    //     {
-    //         StartCoroutine(HandleDialogue());
-    //     }
-    // }
 
-    // private IEnumerator HandleDialogue()
-    // {
-    //     dialogueStarted = true;
-    //     dialogueBox.SetActive(true);
 
-    //     if (dialogueComponent == null || dialogueComponent.lines == null || dialogueComponent.lines.Length == 0)
-    //     {
-    //         Debug.LogError("No dialogue lines provided!");
-    //         yield break;
-    //     }
 
-    //     dialogueComponent.StartDialogue();
 
-    //     // Wait for dialogue to finish (when dialogueBox is hidden by Dialogue script)
-    //     while (dialogueBox.activeSelf)
-    //     {
-    //         yield return null;
-    //     }
 
-    //     if (sceneDecided) yield break;
 
-    //     // Check if the potion is in hand
-    //     if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
-    //     {
-    //         SceneManager.LoadScene(winSceneName);
-    //     }
-    //     else
-    //     {
-    //         SceneManager.LoadScene(loseSceneName);
-    //     }
 
-    //     sceneDecided = true;
-    // }
-
-    // private Transform FindChildRecursive(Transform parent, string childName)
-    // {
-    //     foreach (Transform child in parent)
-    //     {
-    //         if (child.name == childName)
-    //             return child;
-
-    //         Transform result = FindChildRecursive(child, childName);
-    //         if (result != null)
-    //             return result;
-    //     }
-    //     return null;
-    // }
 
 
 
@@ -236,16 +145,21 @@ public class BossProximityDialogue : MonoBehaviour
 
     // private void Start()
     // {
-    //     player = GameObject.FindWithTag("Player");
-
-    //     if (player == null)
+    //     var controller = FindObjectOfType<StarterAssets.FirstPersonController>();
+    //     if (controller == null)
     //     {
-    //         Debug.LogError("Player not found in scene!");
+    //         Debug.LogError("FirstPersonController not found!");
     //         return;
     //     }
 
-    //     // Look for child named "PotionGrabPoint"
-    //     potionGrabPoint = player.transform.Find("PotionGrabPoint");
+    //     player = controller.gameObject;
+
+    //     Debug.Log("Searching under: " + player.name);
+    //     PrintChildren(player.transform, 0); // NEW: Print hierarchy to console
+        
+
+    //     // Look for "PotionGrabPoint" anywhere under the player
+    //     potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
     //     if (potionGrabPoint == null)
     //     {
     //         Debug.LogWarning("PotionGrabPoint not found under player!");
@@ -258,13 +172,45 @@ public class BossProximityDialogue : MonoBehaviour
     //         {
     //             Debug.LogError("Dialogue component not found on dialogueBox!");
     //         }
+    //         dialogueBox.SetActive(false);
     //     }
     //     else
     //     {
     //         Debug.LogError("DialogueBox is not assigned!");
     //     }
 
-    //     dialogueBox.SetActive(false);
+
+
+    //     // // Find the player via FirstPersonController or similar component
+    //     // var controller = FindObjectOfType<StarterAssets.FirstPersonController>();
+    //     // if (controller == null)
+    //     // {
+    //     //     Debug.LogError("FirstPersonController not found!");
+    //     //     return;
+    //     // }
+
+    //     // player = controller.gameObject;
+
+    //     // // Look for "PotionGrabPoint" anywhere under the player
+    //     // potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
+    //     // if (potionGrabPoint == null)
+    //     // {
+    //     //     Debug.LogWarning("PotionGrabPoint not found under player!");
+    //     // }
+
+    //     // if (dialogueBox != null)
+    //     // {
+    //     //     dialogueComponent = dialogueBox.GetComponent<Dialogue>();
+    //     //     if (dialogueComponent == null)
+    //     //     {
+    //     //         Debug.LogError("Dialogue component not found on dialogueBox!");
+    //     //     }
+    //     //     dialogueBox.SetActive(false);
+    //     // }
+    //     // else
+    //     // {
+    //     //     Debug.LogError("DialogueBox is not assigned!");
+    //     // }
     // }
 
     // private void Update()
@@ -289,10 +235,9 @@ public class BossProximityDialogue : MonoBehaviour
     //         yield break;
     //     }
 
-    //     // Start the dialogue
     //     dialogueComponent.StartDialogue();
 
-    //     // Wait for dialogue to finish
+    //     // Wait for dialogue to finish (i.e. box is deactivated)
     //     while (dialogueBox.activeSelf)
     //     {
     //         yield return null;
@@ -300,7 +245,7 @@ public class BossProximityDialogue : MonoBehaviour
 
     //     if (sceneDecided) yield break;
 
-    //     // Check if potion is in player's hand
+    //     // Check if potion is being held
     //     if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
     //     {
     //         SceneManager.LoadScene("WinScene");
@@ -313,87 +258,7 @@ public class BossProximityDialogue : MonoBehaviour
     //     sceneDecided = true;
     // }
 
-
-
-
-
-
-
-    // public float triggerDistance = 5f;
-    // public GameObject dialogueBox; // Canvas with Dialogue component
-    // public string winSceneName;
-    // public string loseSceneName;
-
-    // private GameObject player;
-    // private Transform potionGrabPoint;
-    // private Dialogue dialogueComponent;
-    // private bool dialogueStarted = false;
-    // private bool sceneDecided = false;
-
-    // private IEnumerator Start()
-    // {
-    //     // Wait until player is loaded
-    //     while (player == null)
-    //     {
-    //         player = GameObject.FindGameObjectWithTag("Player");
-    //         yield return null;
-    //     }
-
-    //     // Look for PotionGrabPoint recursively
-    //     potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
-    //     if (potionGrabPoint == null)
-    //     {
-    //         Debug.LogWarning("PotionGrabPoint not found under player!");
-    //     }
-
-    //     if (dialogueBox != null)
-    //     {
-    //         dialogueBox.SetActive(false);
-    //         dialogueComponent = dialogueBox.GetComponent<Dialogue>();
-    //     }
-    //     else
-    //     {
-    //         Debug.LogError("DialogueBox is not assigned.");
-    //     }
-    // }
-
-    // private void Update()
-    // {
-    //     if (dialogueStarted || player == null || dialogueComponent == null)
-    //         return;
-
-    //     float distance = Vector3.Distance(player.transform.position, transform.position);
-    //     if (distance <= triggerDistance)
-    //     {
-    //         StartCoroutine(HandleDialogue());
-    //     }
-    // }
-
-    // private IEnumerator HandleDialogue()
-    // {
-    //     dialogueStarted = true;
-    //     dialogueBox.SetActive(true);
-    //     dialogueComponent.StartDialogue();
-
-    //     while (!dialogueComponent.isDialogueFinished)
-    //     {
-    //         yield return null;
-    //     }
-
-    //     if (sceneDecided) yield break;
-
-    //     if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
-    //     {
-    //         SceneManager.LoadScene(winSceneName);
-    //     }
-    //     else
-    //     {
-    //         SceneManager.LoadScene(loseSceneName);
-    //     }
-
-    //     sceneDecided = true;
-    // }
-
+    // // Recursively find a child transform by name
     // private Transform FindChildRecursive(Transform parent, string name)
     // {
     //     foreach (Transform child in parent)
@@ -401,251 +266,20 @@ public class BossProximityDialogue : MonoBehaviour
     //         if (child.name == name)
     //             return child;
 
-    //         Transform result = FindChildRecursive(child, name);
+    //         var result = FindChildRecursive(child, name);
     //         if (result != null)
     //             return result;
     //     }
     //     return null;
     // }
 
-
-
-
-
-
-
-    // public float triggerDistance = 5f;
-    // public GameObject dialogueBox; // Assign the Dialogue Box Canvas here
-    // public string winSceneName;
-    // public string loseSceneName;
-
-    // private GameObject player;
-    // private Transform potionGrabPoint;
-    // private Dialogue dialogueComponent;
-    // private bool dialogueStarted = false;
-    // private bool sceneDecided = false;
-
-    // private IEnumerator Start()
+    // private void PrintChildren(Transform parent, int level)
     // {
-    //     // Wait for player to exist in scene
-    //     while (player == null)
-    //     {
-    //         player = GameObject.FindGameObjectWithTag("Player");
-    //         yield return null;
-    //     }
-
-    //     // Look for PotionGrabPoint in player hierarchy
-    //     potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
-    //     if (potionGrabPoint == null)
-    //     {
-    //         Debug.LogWarning("PotionGrabPoint not found under player!");
-    //     }
-
-    //     if (dialogueBox != null)
-    //     {
-    //         dialogueBox.SetActive(false);
-    //         dialogueComponent = dialogueBox.GetComponent<Dialogue>();
-
-    //         if (dialogueComponent == null)
-    //         {
-    //             Debug.LogError("Dialogue component not found on dialogueBox!");
-    //         }
-    //     }
-    //     else
-    //     {
-    //         Debug.LogError("DialogueBox is not assigned!");
-    //     }
-    // }
-
-    // private void Update()
-    // {
-    //     if (dialogueStarted || player == null) return;
-
-    //     float distance = Vector3.Distance(player.transform.position, transform.position);
-    //     if (distance <= triggerDistance)
-    //     {
-    //         StartCoroutine(HandleDialogue());
-    //     }
-    // }
-
-    // private IEnumerator HandleDialogue()
-    // {
-    //     dialogueStarted = true;
-    //     dialogueBox.SetActive(true);
-
-    //     if (dialogueComponent == null || dialogueComponent.lines == null || dialogueComponent.lines.Length == 0)
-    //     {
-    //         Debug.LogError("No dialogue lines provided!");
-    //         yield break;
-    //     }
-
-    //     dialogueComponent.StartDialogue();
-
-    //     while (dialogueBox.activeSelf)
-    //     {
-    //         yield return null;
-    //     }
-
-    //     if (sceneDecided) yield break;
-
-    //     // Check for potion in hand
-    //     if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
-    //     {
-    //         //SceneManager.LoadScene(winSceneName);
-    //         SceneManager.LoadScene("WinScene");
-    //     }
-    //     else
-    //     {
-    //         //SceneManager.LoadScene(loseSceneName);
-    //         SceneManager.LoadScene("LoseScene");
-    //     }
-
-    //     sceneDecided = true;
-    // }
-
-    // private Transform FindChildRecursive(Transform parent, string childName)
-    // {
+    //     string indent = new string('-', level * 2);
+    //     Debug.Log(indent + parent.name);
     //     foreach (Transform child in parent)
     //     {
-    //         if (child.name == childName)
-    //             return child;
-
-    //         Transform found = FindChildRecursive(child, childName);
-    //         if (found != null)
-    //             return found;
+    //         PrintChildren(child, level + 1);
     //     }
-    //     return null;
-    // }
-    
-
-
-
-
-    // public float triggerDistance = 5f;
-    // public GameObject dialogueBox; // Assign the Dialogue Box Canvas here
-    // public string winSceneName;
-    // public string loseSceneName;
-
-    // private GameObject player;
-    // private Transform potionGrabPoint;
-    // private Dialogue dialogueComponent;
-    // private bool dialogueStarted = false;
-    // private bool sceneDecided = false;
-
-    // private IEnumerator Start()
-    // {
-    //     // Wait until the player exists in the scene
-    //     GameObject player = null;
-    //     while (player == null)
-    //     {
-    //         player = GameObject.FindGameObjectWithTag("Player");
-    //         yield return null;
-    //     }
-
-    //     // Try to find the PotionGrabPoint under the player
-    //     potionGrabPoint = FindChildRecursive(player.transform, "PotionGrabPoint");
-    //     if (potionGrabPoint == null)
-    //     {
-    //         Debug.LogWarning("PotionGrabPoint not found under player!");
-    //     }
-
-    //     // Proceed with rest of logic (e.g., hiding dialogue box at start)
-    //     if (dialogueBox != null)
-    //     {
-    //         dialogueBox.SetActive(false);
-    //     }
-    // }
-
-    // private Transform FindChildRecursive(Transform parent, string childName)
-    // {
-    //     foreach (Transform child in parent)
-    //     {
-    //         if (child.name == childName)
-    //             return child;
-
-    //         Transform result = FindChildRecursive(child, childName);
-    //         if (result != null)
-    //             return result;
-    //     }
-    //     return null;
-    // }
-
-    // // private void Start()
-    // // {
-    // //     player = GameObject.FindWithTag("Player");
-
-    // //     if (player == null)
-    // //     {
-    // //         Debug.LogError("Player not found in scene!");
-    // //         return;
-    // //     }
-
-    // //     // Look for child named "PotionGrabPoint"
-    // //     potionGrabPoint = player.transform.Find("PotionGrabPoint");
-    // //     if (potionGrabPoint == null)
-    // //     {
-    // //         Debug.LogWarning("PotionGrabPoint not found under player!");
-    // //     }
-
-    // //     if (dialogueBox != null)
-    // //     {
-    // //         dialogueComponent = dialogueBox.GetComponent<Dialogue>();
-    // //         if (dialogueComponent == null)
-    // //         {
-    // //             Debug.LogError("Dialogue component not found on dialogueBox!");
-    // //         }
-    // //     }
-    // //     else
-    // //     {
-    // //         Debug.LogError("DialogueBox is not assigned!");
-    // //     }
-
-    // //     dialogueBox.SetActive(false);
-    // // }
-
-    // private void Update()
-    // {
-    //     if (dialogueStarted || player == null) return;
-
-    //     float distance = Vector3.Distance(player.transform.position, transform.position);
-    //     if (distance <= triggerDistance)
-    //     {
-    //         StartCoroutine(HandleDialogue());
-    //     }
-    // }
-
-    // private IEnumerator HandleDialogue()
-    // {
-    //     dialogueStarted = true;
-    //     dialogueBox.SetActive(true);
-
-    //     if (dialogueComponent == null || dialogueComponent.lines == null || dialogueComponent.lines.Length == 0)
-    //     {
-    //         Debug.LogError("No dialogue lines provided!");
-    //         yield break;
-    //     }
-
-    //     // Start the dialogue
-    //     dialogueComponent.StartDialogue();
-
-    //     // Wait for dialogue to finish
-    //     while (dialogueBox.activeSelf)
-    //     {
-    //         yield return null;
-    //     }
-
-    //     if (sceneDecided) yield break;
-
-    //     // Check if potion is in player's hand
-    //     if (potionGrabPoint != null && potionGrabPoint.childCount > 0)
-    //     {
-    //         SceneManager.LoadScene(winSceneName);
-    //     }
-    //     else
-    //     {
-    //         SceneManager.LoadScene(loseSceneName);
-    //     }
-
-    //     sceneDecided = true;
     // }
 }

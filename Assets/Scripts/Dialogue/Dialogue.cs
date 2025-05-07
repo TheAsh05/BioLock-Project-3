@@ -41,8 +41,8 @@ public class Dialogue : MonoBehaviour
     public void StartDialogue()
     {
         index = 0;
-        textComponent.text = string.Empty;
-        isDialogueFinished = false;
+        //textComponent.text = string.Empty;
+        //isDialogueFinished = false;
         StartCoroutine(TypeLine());
     }
 
@@ -66,7 +66,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            isDialogueFinished = true;
+            //isDialogueFinished = true;
             gameObject.SetActive(false);
         }
     }

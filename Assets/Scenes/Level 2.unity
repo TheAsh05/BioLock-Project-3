@@ -8222,6 +8222,7 @@ MonoBehaviour:
   - 'Sir Quacksworth: The bottle will be the key to success. Finding it is key to
     survival.'
   textSpeed: 0.1
+  isDialogueFinished: 0
 --- !u!114 &969374261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17992,7 +17993,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912937517}
-  - component: {fileID: 1912937516}
   - component: {fileID: 1912937515}
   m_Layer: 0
   m_Name: PlayerSpawnPoint
@@ -18013,22 +18013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a43e74b6357a24ec78f7f7e171775bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
   spawnPoint: {fileID: 1912937517}
---- !u!114 &1912937516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912937514}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 326731d4f8d404774acb6e0fb9251cc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
-  spawnPoint: {fileID: 0}
 --- !u!4 &1912937517
 Transform:
   m_ObjectHideFlags: 0

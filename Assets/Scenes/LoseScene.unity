@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 772799754}
   - component: {fileID: 772799753}
   m_Layer: 5
-  m_Name: LoseScreen
+  m_Name: LoseScreenCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,6 +436,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 974960204}
+  - {fileID: 1584106681}
+  - {fileID: 970942143}
   - {fileID: 601751622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -561,17 +563,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970942142}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 974960204}
+  m_Father: {fileID: 772799757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 88}
-  m_SizeDelta: {x: 1000, y: 400}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970942144
 MonoBehaviour:
@@ -593,11 +595,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You did not figure out the riddle and ended up being eaten by the creature.
-
-
-    Try
-    again!'
+  m_text: "Well, you failed the riddle and became the creature\u2019s snack. Not
+    quite the breakfast you were hoping for. \n\nTry again!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -624,8 +623,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -686,7 +685,7 @@ GameObject:
   - component: {fileID: 974960206}
   - component: {fileID: 974960205}
   m_Layer: 5
-  m_Name: LoseMenuCanvas
+  m_Name: BKG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,15 +702,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 970942143}
-  - {fileID: 1584106681}
+  m_Children: []
   m_Father: {fileID: 772799757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5316772, y: 7.595215}
+  m_SizeDelta: {x: 121.522, y: 91.1416}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &974960205
 MonoBehaviour:
@@ -764,7 +761,7 @@ GameObject:
   - component: {fileID: 1584106683}
   - component: {fileID: 1584106682}
   m_Layer: 0
-  m_Name: MainMenu
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,11 +780,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2102304403}
-  m_Father: {fileID: 974960204}
+  m_Father: {fileID: 772799757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -344}
+  m_AnchoredPosition: {x: 0, y: -335}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1584106682
@@ -811,10 +808,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0.8745098, g: 0.2901961, b: 0.3137255, a: 0.3254902}
+    m_HighlightedColor: {r: 0.9607843, g: 0.69411767, b: 0.54901963, a: 0.654902}
+    m_PressedColor: {r: 0.654902, g: 0.68235296, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.654902, g: 0.6784314, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -950,8 +947,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1024,5 +1021,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 836218350}
   - {fileID: 293358353}
-  - {fileID: 772799757}
   - {fileID: 191100247}
+  - {fileID: 772799757}

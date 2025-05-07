@@ -6,7 +6,6 @@ using StarterAssets;
 
 public class PlayerSpawnManager : MonoBehaviour
 {
-    public GameObject playerPrefab; // The prefab of the player to spawn
     public Transform spawnPoint; // The spawn point for the player
     private GameObject playerInstance;
 
@@ -55,7 +54,8 @@ public class PlayerSpawnManager : MonoBehaviour
     // Method to spawn the player if it doesn't already exist
     public void SpawnPlayer()
     {
-        if (playerPrefab != null && spawnPoint != null)
+        Debug.Log("Spawning Player");
+        if (spawnPoint != null)
         {
             // // Check if the player already exists in the scene
             playerInstance = GameObject.FindWithTag("Player");
