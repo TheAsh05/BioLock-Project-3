@@ -10850,9 +10850,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4907239047242697928, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2143746201}
-    - targetCorrespondingSourceObject: {fileID: 4907239047242697928, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143746203}
   m_SourcePrefab: {fileID: 100100000, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
 --- !u!1 &1120505914 stripped
 GameObject:
@@ -13961,7 +13958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1422028959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15819,10 +15816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa1149b3c8fe14b628873b0b7b74db8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasToShow: {fileID: 1702670018}
-  potion: {fileID: 0}
-  grabPoint: {fileID: 0}
-  bossDialogueScript: {fileID: 0}
 --- !u!4 &1627092547
 Transform:
   m_ObjectHideFlags: 0
@@ -16853,7 +16846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697487499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17124,7 +17117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1702670019
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21682,13 +21675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28dfe8510dab243aba7c70414cf60d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   triggerDistance: 5
   dialogueBox: {fileID: 1093987809}
-  textComponent: {fileID: 0}
-  lines: []
-  textSpeed: 0.05
-  dialogueFinished: 0
+  winSceneName: WinScene
+  loseSceneName: LoseScene
 --- !u!65 &2143746202
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21710,22 +21700,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.002617, y: 2.9058905, z: 2.7408285}
   m_Center: {x: -0.12467575, y: 0.95294523, z: 0.87041426}
---- !u!114 &2143746203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120505914}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa1149b3c8fe14b628873b0b7b74db8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasToShow: {fileID: 1702670018}
-  potion: {fileID: 0}
-  grabPoint: {fileID: 0}
-  bossDialogueScript: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

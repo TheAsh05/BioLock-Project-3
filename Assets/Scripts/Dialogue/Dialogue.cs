@@ -37,7 +37,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
@@ -66,4 +66,9 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    // public bool IsDialoguePlaying()
+    // {
+    //     return textComponent.text != lines[lines.Length - 1]; // Checks if final line is done
+    // }
 }
